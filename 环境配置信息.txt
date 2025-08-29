@@ -1,0 +1,111 @@
+# 知识库服务配置
+MILVUS_HOST=localhost
+MILVUS_PORT=19530
+EMBEDDING_MODEL=BAAI/bge-large-zh
+API_HOST=0.0.0.0
+API_PORT=8000
+
+# 千问Agent配置（阿里百炼平台）
+QWEN_API_KEY=sk-92831bf7d6034bc88babdccd83d869c5	
+QWEN_API_BASE=https://dashscope.aliyuncs.com/compatible-mode/v1
+QWEN_MODEL_NAME=qwen-plus
+
+# 千问Agent Function Call配置
+QWEN_FUNCTION_CALLS=[
+  {
+    "name": "search_knowledge_base",
+    "description": "搜索企业知识库内容，支持简称查询、流程查询、制度查询等",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "搜索查询内容，支持：1. 简称查询（如ESS、OA等）；2. 流程查询（如年假申请）；3. 制度查询（如培训制度）"
+        },
+        "top_k": {
+          "type": "integer",
+          "description": "返回结果数量，默认5"
+        }
+      },
+      "required": ["query"]
+    }
+  },
+  {
+    "name": "parse_document",
+    "description": "解析上传的企业文档，支持PDF、TXT等格式",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "file": {
+          "type": "string",
+          "description": "文件路径或内容"
+        }
+      },
+      "required": ["file"]
+    }
+  },
+  {
+    "name": "process_multimodal",
+    "description": "处理多模态内容（图片、视频、文本）",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "content": {
+          "type": "string",
+          "description": "内容描述"
+        },
+        "file_type": {
+          "type": "string",
+          "enum": ["image", "video", "text"],
+          "description": "文件类型"
+        }
+      },
+      "required": ["content", "file_type"]
+    }
+  }
+]
+
+# 千问Agent API端点配置
+QWEN_API_ENDPOINTS={
+  "search": "POST /api/search",
+  "parse_document": "POST /api/parse_document",
+  "process_multimodal": "POST /api/process_multimodal",
+  "health_check": "GET /api/health"
+}
+
+# 千问Agent 系统提示词配置
+QWEN_SYSTEM_PROMPT="你是一个专业的企业知识库助手，能够帮助用户查询公司制度、流程、简称等信息。你可以调用以下函数来获取信息：1. search_knowledge_base - 搜索知识库内容；2. parse_document - 解析上传的文档；3. process_multimodal - 处理多模态内容。请根据用户问题智能选择合适的函数调用。"
+
+# 存储路径配置
+DATA_DISK=/root/autodl-tmp
+TRANSFORMERS_CACHE=/root/autodl-tmp/enterprise_kb/models/transformers
+HF_HOME=/root/autodl-tmp/enterprise_kb/models/huggingface
+TORCH_HOME=/root/autodl-tmp/enterprise_kb/models/torch
+VECTOR_DB_PATH=/root/autodl-tmp/enterprise_kb/vector_db
+DOCUMENTS_PATH=/root/autodl-tmp/enterprise_kb/documents
+TRAINING_DATA_PATH=/root/autodl-tmp/enterprise_kb/data
+
+# 日志配置
+LOG_LEVEL=INFO
+LOG_FILE=logs/enterprise_kb.log
+
+# 千问Agent 代码实现路径
+QWEN_AGENT_CODE_PATH=~/enterprise_kb_service
+QWEN_AGENT_MAIN_FILE=api/main.py
+QWEN_AGENT_CORE_PATH=core/
+QWEN_AGENT_START_SCRIPT=start_service.sh
+
+# 千问Agent 训练数据配置
+QWEN_TRAINING_DATA_PATH=~/LLaMA-Factory/data/enterprise_kb.jsonl
+QWEN_LORA_OUTPUT_DIR=./lora_ckpt
+QWEN_TRAINING_CONFIG={
+  "model_name": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+  "template": "qwen",
+  "finetuning_type": "lora",
+  "per_device_train_batch_size": 4,
+  "gradient_accumulation_steps": 4,
+  "num_train_epochs": 3,
+  "quantization_bit": 4,
+  "learning_rate": 3e-4,
+  "fp16": true
+}

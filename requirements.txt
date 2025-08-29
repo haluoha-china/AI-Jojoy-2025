@@ -1,0 +1,49 @@
+# 企业知识库系统依赖包
+# 核心AI库
+torch>=2.0.0
+transformers>=4.30.0
+accelerate>=0.20.0
+sentence-transformers>=2.2.0
+
+# 向量数据库
+faiss-cpu>=1.7.0
+chromadb>=0.4.0
+
+# LangChain
+langchain>=0.1.0
+langchain-community>=0.0.10
+
+# 文档处理
+PyMuPDF>=1.23.0
+pypdf2>=3.0.0
+pdfplumber>=0.9.0
+python-docx>=0.8.11
+openpyxl>=3.1.0
+
+# OCR和图像处理
+paddlepaddle>=2.5.0
+paddleocr>=2.7.0
+Pillow>=9.5.0
+opencv-python>=4.8.0
+
+# Web框架
+Flask>=2.3.0
+Werkzeug>=2.3.0
+
+# 数据处理
+pandas>=2.0.0
+numpy>=1.24.0
+
+# 工具库
+python-dotenv>=1.0.0
+requests>=2.31.0
+tqdm>=4.65.0
+click>=8.1.0
+
+# 可选：表格处理
+tabula-py>=2.7.0
+camelot-py>=0.11.0
+
+# 可选：异步处理
+aiohttp>=3.8.0
+asyncio>=3.4.3

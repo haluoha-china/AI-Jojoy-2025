@@ -1,0 +1,3199 @@
+{
+  "metadata": {
+    "description": "企业知识库缩略语综合测试集 - 分层验证策略",
+    "version": "1.0",
+    "statistics": {
+      "total_test_cases": 455,
+      "layer1_basic": 263,
+      "layer2_confusion": 169,
+      "layer3_real_world": 23
+    }
+  },
+  "test_cases": [
+    {
+      "test_id": "basic_ACT._001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'ACT.' 的含义",
+      "expected_answer": "实际的",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_AIP_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'AIP' 的含义",
+      "expected_answer": "中国国际印刷技术及设备器械展，简称全印展",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_AM_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'AM' 的含义",
+      "expected_answer": "客户经理",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_AMGB_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'AMGB' 的含义",
+      "expected_answer": "区域销售团队（ART）管理手册",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_AMPV_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'AMPV' 的含义",
+      "expected_answer": "平均月印量",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_AR_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'AR' 的含义",
+      "expected_answer": "应收账款",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_AR%_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'AR%' 的含义",
+      "expected_answer": "达成率",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_ARC_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'ARC' 的含义",
+      "expected_answer": "设备修复中心",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_ART_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'ART' 的含义",
+      "expected_answer": "区域销售团队",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_AS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'AS' 的含义",
+      "expected_answer": "售后服务部",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_ASP_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'ASP' 的含义",
+      "expected_answer": "授权服务商",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_BD_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'BD' 的含义",
+      "expected_answer": "业务拓展",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_BM_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'BM' 的含义",
+      "expected_answer": "分公司经理",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_BOD_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'BOD' 的含义",
+      "expected_answer": "按需出版",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_BPO_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'BPO' 的含义",
+      "expected_answer": "业务流程外包服务",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_BS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'BS' 的含义",
+      "expected_answer": "业务解决方案部，业务服务部",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_BS&P_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'BS&P' 的含义",
+      "expected_answer": "企业战略规划部",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_C&B_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'C&B' 的含义",
+      "expected_answer": "薪酬福利",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_C&C_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'C&C' 的含义",
+      "expected_answer": "投诉",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_CA_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'CA' 的含义",
+      "expected_answer": "客户管理部",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_CAPEX_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'CAPEX' 的含义",
+      "expected_answer": "资本性支出",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_CCC_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'CCC' 的含义",
+      "expected_answer": "中国强制性产品认证",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_CED_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'CED' 的含义",
+      "expected_answer": "客户期望值设置文件",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_CF_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'CF' 的含义",
+      "expected_answer": "连续纸打印",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_CI_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'CI' 的含义",
+      "expected_answer": "企业识别",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_CIF_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'CIF' 的含义",
+      "expected_answer": "成本、保险 和运费",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_CLR_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'CLR' 的含义",
+      "expected_answer": "彩色",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_CMS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'CMS' 的含义",
+      "expected_answer": "色彩管理系统",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_CONS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'CONS' 的含义",
+      "expected_answer": "订单整合网络系统",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_CP_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'CP' 的含义",
+      "expected_answer": "商业印刷",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_CRM_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'CRM' 的含义",
+      "expected_answer": "客户关系管理",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_CRP_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'CRP' 的含义",
+      "expected_answer": "客户关系调研",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_CRU_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'CRU' 的含义",
+      "expected_answer": "客户可自行更换组件",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_CS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'CS' 的含义",
+      "expected_answer": "客户满意",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_CTS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'CTS' 的含义",
+      "expected_answer": "客户技术支持",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_CSE_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'CSE' 的含义",
+      "expected_answer": "客户服务工程师",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_CSR_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'CSR' 的含义",
+      "expected_answer": "企业社会责任",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_CSS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'CSS' 的含义",
+      "expected_answer": "渠道服务支持",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_CY_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'CY' 的含义",
+      "expected_answer": "自然年，历年",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_D1D2_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'D1D2' 的含义",
+      "expected_answer": "呆滞库存",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_DDP_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'DDP' 的含义",
+      "expected_answer": "完税后交货",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_DDU_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'DDU' 的含义",
+      "expected_answer": "未完税交货",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_DECAPEX_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'DECAPEX' 的含义",
+      "expected_answer": "资本性支出退回, 固定资产退库",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_DFE_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'DFE' 的含义",
+      "expected_answer": "打印服务器",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_DRM_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'DRM' 的含义",
+      "expected_answer": "项目审核会议",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_DM_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'DM' 的含义",
+      "expected_answer": "直邮，直投",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_DMCO_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'DMCO' 的含义",
+      "expected_answer": "开发制造部",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_DMGO_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'DMGO' 的含义",
+      "expected_answer": "交易管理和治理",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_DN_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'DN' 的含义",
+      "expected_answer": "发货票数",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_DOA_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'DOA' 的含义",
+      "expected_answer": "开箱即损",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_DOS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'DOS' 的含义",
+      "expected_answer": "文件外包服务",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_DPPS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'DPPS' 的含义",
+      "expected_answer": "需求预测和采购计划系统",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_DQP_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'DQP' 的含义",
+      "expected_answer": "项目资质管理流程",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_DT_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'DT' 的含义",
+      "expected_answer": "设备技术，设备技术部",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_DV_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'DV' 的含义",
+      "expected_answer": "印张数",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_EC_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'EC' 的含义",
+      "expected_answer": "电子商务",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_EDI_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'EDI' 的含义",
+      "expected_answer": "电子数据交换",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_DT- METRO_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'DT- METRO' 的含义",
+      "expected_answer": "一线城市设备技术（产品线）",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_EE_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'EE' 的含义",
+      "expected_answer": "能源效率",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_EES_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'EES' 的含义",
+      "expected_answer": "员工敬业度调查",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_EI_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'EI' 的含义",
+      "expected_answer": "设备库存",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_EIF_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'EIF' 的含义",
+      "expected_answer": "现场机器设备（包括竞品）",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_EL_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'EL' 的含义",
+      "expected_answer": "中国环境认证标志",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_EMS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'EMS' 的含义",
+      "expected_answer": "环境管理体系",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_EOL_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'EOL' 的含义",
+      "expected_answer": "报废产品",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_EOS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'EOS' 的含义",
+      "expected_answer": "停售产品",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_EOSS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'EOSS' 的含义",
+      "expected_answer": "产品终止服务",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_EPBB_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'EPBB' 的含义",
+      "expected_answer": "轻松保远程服务",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_EPC_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'EPC' 的含义",
+      "expected_answer": "入门级彩色生产型打印设备",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_EPS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'EPS' 的含义",
+      "expected_answer": "企业打印管理服务",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_EQ_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'EQ' 的含义",
+      "expected_answer": "设备",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_ES_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'ES' 的含义",
+      "expected_answer": "大幅面数字印刷机、工程系统产品组",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_ESS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'ESS' 的含义",
+      "expected_answer": "企业解决方案服务部",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_EST._001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'EST.' 的含义",
+      "expected_answer": "预估",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_ETA_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'ETA' 的含义",
+      "expected_answer": "预计到达时间",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_ETD_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'ETD' 的含义",
+      "expected_answer": "预计出发时间",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_EVAL._001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'EVAL.' 的含义",
+      "expected_answer": "评估",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_E-WASTE_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'E-WASTE' 的含义",
+      "expected_answer": "电子废弃物",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_FB_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'FB' 的含义",
+      "expected_answer": "富士胶片商业创新有限公司",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_FBAP_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'FBAP' 的含义",
+      "expected_answer": "富士胶片商业创新亚太私人有限公司",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_FFCN_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'FFCN' 的含义",
+      "expected_answer": "富士胶片（中国）投资有限公司",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_FBCN_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'FBCN' 的含义",
+      "expected_answer": "富士胶片商业创新（中国）有限公司",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_FBBD_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'FBBD' 的含义",
+      "expected_answer": "富士胶片实业发展（上海）有限公司",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_FBBS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'FBBS' 的含义",
+      "expected_answer": "富士胶片商业服务（上海）有限公司",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_FBLS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'FBLS' 的含义",
+      "expected_answer": "富士胶片融资租赁（上海）有限公司",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_FBSH_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'FBSH' 的含义",
+      "expected_answer": "富士胶片商务设备（上海）有限公司",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_FBGP_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'FBGP' 的含义",
+      "expected_answer": "富士胶片采购咨询（深圳）有限公司",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_FBEMS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'FBEMS' 的含义",
+      "expected_answer": "富士胶片爱科制造（苏州）有限公司",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_FBSZ_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'FBSZ' 的含义",
+      "expected_answer": "富士胶片制造（深圳）有限公司",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_FBOIC_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'FBOIC' 的含义",
+      "expected_answer": "富士胶片商业开放创新中心",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_FCL_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'FCL' 的含义",
+      "expected_answer": "整箱",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_FFPS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'FFPS' 的含义",
+      "expected_answer": "FreeFlow 打印服务器",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_FH_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'FH' 的含义",
+      "expected_answer": "上半财年",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_FIN_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'FIN' 的含义",
+      "expected_answer": "财务部",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_FMS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'FMS' 的含义",
+      "expected_answer": "机群管理服务",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_FOB_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'FOB' 的含义",
+      "expected_answer": "装运港船上交货",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_FOC_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'FOC' 的含义",
+      "expected_answer": "免费",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_FSMA_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'FSMA' 的含义",
+      "expected_answer": "全包服务合同",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_FY_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'FY' 的含义",
+      "expected_answer": "财政年度，财年",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_G%_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'G%' 的含义",
+      "expected_answer": "增长率",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_GA_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'GA' 的含义",
+      "expected_answer": "行政部",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_GC_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'GC' 的含义",
+      "expected_answer": "图形通信部",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_GM_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'GM' 的含义",
+      "expected_answer": "毛利率",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_GM FLOOR_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'GM FLOOR' 的含义",
+      "expected_answer": "授权给总经理审批的最低价格",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_GP_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'GP' 的含义",
+      "expected_answer": "毛利",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_GR_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'GR' 的含义",
+      "expected_answer": "政府事务",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_GTM_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'GTM' 的含义",
+      "expected_answer": "市场进入（战略）",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_GYR_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'GYR' 的含义",
+      "expected_answer": "绿，黄，红",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_HC_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'HC' 的含义",
+      "expected_answer": "人员编制",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_HCF_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'HCF' 的含义",
+      "expected_answer": "大容量进纸器",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_HESP_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'HESP' 的含义",
+      "expected_answer": "高端印刷系统",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_HF_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'HF' 的含义",
+      "expected_answer": "热文件夹",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_HPD_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'HPD' 的含义",
+      "expected_answer": "提议部门主管",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_HR_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'HR' 的含义",
+      "expected_answer": "人力资源部",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_HRIS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'HRIS' 的含义",
+      "expected_answer": "人力资源信息系统",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_HS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'HS' 的含义",
+      "expected_answer": "编码协调制度",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_HV_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'HV' 的含义",
+      "expected_answer": "轻生产型静电数字印刷机",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_HW_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'HW' 的含义",
+      "expected_answer": "硬件",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_I3_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'I3' 的含义",
+      "expected_answer": "产品信息",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_IA_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'IA' 的含义",
+      "expected_answer": "内部审计部",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_ICT_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'ICT' 的含义",
+      "expected_answer": "信息通信技术，信息通信技术部",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_IDMP_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'IDMP' 的含义",
+      "expected_answer": "内部决策程序",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_IE_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'IE' 的含义",
+      "expected_answer": "进出口",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_IEC_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'IEC' 的含义",
+      "expected_answer": "国际电工委员会",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_IOT_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'IOT' 的含义",
+      "expected_answer": "打印主机",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_ISMS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'ISMS' 的含义",
+      "expected_answer": "信息安全管理体系",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_ISO_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'ISO' 的含义",
+      "expected_answer": "国际标准化组织",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_ISP_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'ISP' 的含义",
+      "expected_answer": "独立授权服务商",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_JDF_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'JDF' 的含义",
+      "expected_answer": "作业描述格式",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_KAM_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'KAM' 的含义",
+      "expected_answer": "大客户经理",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_KAT_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'KAT' 的含义",
+      "expected_answer": "大客户组",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_KPI_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'KPI' 的含义",
+      "expected_answer": "关键绩效指标",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_LCL_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'LCL' 的含义",
+      "expected_answer": "拼箱",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_LED_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'LED' 的含义",
+      "expected_answer": "发光二极管",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_LH_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'LH' 的含义",
+      "expected_answer": "下半财年",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_LOB_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'LOB' 的含义",
+      "expected_answer": "业务线",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_LOS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'LOS' 的含义",
+      "expected_answer": "服务业务线",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_LP_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'LP' 的含义",
+      "expected_answer": "低绩效员工",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_LPC_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'LPC' 的含义",
+      "expected_answer": "轻生产型彩色印刷系统",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_LPM_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'LPM' 的含义",
+      "expected_answer": "低绩效管理",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_M/C_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'M/C' 的含义",
+      "expected_answer": "机器",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_M/H_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'M/H' 的含义",
+      "expected_answer": "中高端机器",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_MACD_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'MACD' 的含义",
+      "expected_answer": "移机 加机 换机 处理",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_MFD_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'MFD' 的含义",
+      "expected_answer": "多功能产品",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_MFP_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'MFP' 的含义",
+      "expected_answer": "多功能一体机",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_MIF_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'MIF' 的含义",
+      "expected_answer": "合约客户设备",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_MIS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'MIS' 的含义",
+      "expected_answer": "管理信息系统",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_MMI_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'MMI' 的含义",
+      "expected_answer": "移机指引",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_MMP_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'MMP' 的含义",
+      "expected_answer": "旧机试用库",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_MONO_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'MONO' 的含义",
+      "expected_answer": "黑白（机）",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_MPS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'MPS' 的含义",
+      "expected_answer": "打印管理服务",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_MPS GUARDIA_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'MPS GUARDIA' 的含义",
+      "expected_answer": "打印管理服务卫士",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_MRM_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'MRM' 的含义",
+      "expected_answer": "每月产生营收的机器",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_MRP_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'MRP' 的含义",
+      "expected_answer": "中期计划",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_MSR_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'MSR' 的含义",
+      "expected_answer": "新品市场和销售信息",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_MTD_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'MTD' 的含义",
+      "expected_answer": "月初至今",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_NB_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'NB' 的含义",
+      "expected_answer": "新业务",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_NCSS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'NCSS' 的含义",
+      "expected_answer": "全国渠道服务支持",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_NEI_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'NEI' 的含义",
+      "expected_answer": "非设备库存",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_NGO_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'NGO' 的含义",
+      "expected_answer": "非政府组织",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_NON-OOO_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'NON-OOO' 的含义",
+      "expected_answer": "非以一换一回收",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_NPL_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'NPL' 的含义",
+      "expected_answer": "新产品发布",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_NTS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'NTS' 的含义",
+      "expected_answer": "全国技术支持",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_OA_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'OA' 的含义",
+      "expected_answer": "办公自动化",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_OCR_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'OCR' 的含义",
+      "expected_answer": "光学字符识别",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_ODT_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'ODT' 的含义",
+      "expected_answer": "现场支持",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_OL_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'OL' 的含义",
+      "expected_answer": "预测，预估",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_OOO_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'OOO' 的含义",
+      "expected_answer": "以一换一回收",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_OP._001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'OP.' 的含义",
+      "expected_answer": "业务，运营",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_OPCOS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'OPCOS' 的含义",
+      "expected_answer": "指FB亚太区各销售公司",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_OS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'OS' 的含义",
+      "expected_answer": "操作系统",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_P&L_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'P&L' 的含义",
+      "expected_answer": "盈亏，损益",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_P2P_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'P2P' 的含义",
+      "expected_answer": "对等网络",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_PA_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'PA' 的含义",
+      "expected_answer": "绩效评估",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_PCM_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'PCM' 的含义",
+      "expected_answer": "采购管理",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_PCR_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'PCR' 的含义",
+      "expected_answer": "项目变更需求",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_PCS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'PCS' 的含义",
+      "expected_answer": "生产型彩色打印系统",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_PDCA_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'PDCA' 的含义",
+      "expected_answer": "策划、实施、检查、处置",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_PDR_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'PDR' 的含义",
+      "expected_answer": "预算汇率",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_PIS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'PIS' 的含义",
+      "expected_answer": "装机后客户调查",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_PLI_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'PLI' 的含义",
+      "expected_answer": "产品发布信息",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_PM_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'PM' 的含义",
+      "expected_answer": "用人经理",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_PMR_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'PMR' 的含义",
+      "expected_answer": "业务绩效评审",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_PP_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'PP' 的含义",
+      "expected_answer": "潜在客户",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_PPM_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'PPM' 的含义",
+      "expected_answer": "每分钟打印页数",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_PPSP_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'PPSP' 的含义",
+      "expected_answer": "生产型打印系统服务平台",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_PQI_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'PQI' 的含义",
+      "expected_answer": "产品质量问题",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_PRS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'PRS' 的含义",
+      "expected_answer": "生产型远程服务",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_PS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'PS' 的含义",
+      "expected_answer": "专业服务部",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_PV_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'PV' 的含义",
+      "expected_answer": "印量",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_QEMS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'QEMS' 的含义",
+      "expected_answer": "质量和环境管理体系",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_QMS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'QMS' 的含义",
+      "expected_answer": "质量管理体系",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_QP_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'QP' 的含义",
+      "expected_answer": "快印店、图文店",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_RSDM_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'RSDM' 的含义",
+      "expected_answer": "区域客户服务经理",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_REV._001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'REV.' 的含义",
+      "expected_answer": "销售收入",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_RGB_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'RGB' 的含义",
+      "expected_answer": "三原色（RGB）色彩模式",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_RIP_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'RIP' 的含义",
+      "expected_answer": "光栅图像处理器",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_RMA_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'RMA' 的含义",
+      "expected_answer": "退货授权",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_RML_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'RML' 的含义",
+      "expected_answer": "推荐客户使用材料清单",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_ROHS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'ROHS' 的含义",
+      "expected_answer": "电气、电子设备中限制使用某些有害物质",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_ROS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'ROS' 的含义",
+      "expected_answer": "销售投资回报",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_RSD_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'RSD' 的含义",
+      "expected_answer": "亚太区服务台",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_S&S_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'S&S' 的含义",
+      "expected_answer": "解决方案与服务",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_S/R FLOOR_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'S/R FLOOR' 的含义",
+      "expected_answer": "授权给销售的最低价格",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_SA_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'SA' 的含义",
+      "expected_answer": "系统分析员",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_SARG_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'SARG' 的含义",
+      "expected_answer": "同一客户收入增长",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_SC_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'SC' 的含义",
+      "expected_answer": "解决方案顾问",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_SCM_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'SCM' 的含义",
+      "expected_answer": "供应链管理部",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_SSC_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'SSC' 的含义",
+      "expected_answer": "共享服务中心",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_SDCC_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'SDCC' 的含义",
+      "expected_answer": "中国软件开发中心",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_SDM_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'SDM' 的含义",
+      "expected_answer": "服务交付管理",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_SDO_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'SDO' 的含义",
+      "expected_answer": "客户服务交付部",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_SFA_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'SFA' 的含义",
+      "expected_answer": "客户管理系统",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_SGA_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'SGA' 的含义",
+      "expected_answer": "营业费用（相对应sale cost销售成本)",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_SI_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'SI' 的含义",
+      "expected_answer": "系统集成商",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_SIP_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'SIP' 的含义",
+      "expected_answer": "服务改进计划",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_SLA_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'SLA' 的含义",
+      "expected_answer": "服务水平协议",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_SM_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'SM' 的含义",
+      "expected_answer": "销售经理",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_SME_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'SME' 的含义",
+      "expected_answer": "中小企业",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_SMF_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'SMF' 的含义",
+      "expected_answer": "授权给销售经理审批的最低价格",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_SMP_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'SMP' 的含义",
+      "expected_answer": "销售管理流程",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_SMS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'SMS' 的含义",
+      "expected_answer": "短信",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_SO&S_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'SO&S' 的含义",
+      "expected_answer": "销售运营与支持部",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_SOW_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'SOW' 的含义",
+      "expected_answer": "工作范围说明",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_SOWA_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'SOWA' 的含义",
+      "expected_answer": "软件订单网上申请系统",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_SPCC_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'SPCC' 的含义",
+      "expected_answer": "标准产品认证中心",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_SPM_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'SPM' 的含义",
+      "expected_answer": "销售业绩管理",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_SPR_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'SPR' 的含义",
+      "expected_answer": "销售绩效评估",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_SQI_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'SQI' 的含义",
+      "expected_answer": "销售合规问题",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_SR_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'SR' 的含义",
+      "expected_answer": "服务代表",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_SSE_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'SSE' 的含义",
+      "expected_answer": "系统支持工程师",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_SSM_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'SSM' 的含义",
+      "expected_answer": "高级销售经理",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_SSM FLOOR_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'SSM FLOOR' 的含义",
+      "expected_answer": "授权给高级销售经理审批的最低价格",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_STM_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'STM' 的含义",
+      "expected_answer": "项目经理",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_SW_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'SW' 的含义",
+      "expected_answer": "软件",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_T&M_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'T&M' 的含义",
+      "expected_answer": "单次计时计件收费",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_TC_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'TC' 的含义",
+      "expected_answer": "繁体中文",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_TCLR_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'TCLR' 的含义",
+      "expected_answer": "合同周期总收入",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_TCO_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'TCO' 的含义",
+      "expected_answer": "总体拥有成本",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_TDV_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'TDV' 的含义",
+      "expected_answer": "总印量",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_TMS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'TMS' 的含义",
+      "expected_answer": "运输管理系统",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_TP_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'TP' 的含义",
+      "expected_answer": "转移定价",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_TPA_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'TPA' 的含义",
+      "expected_answer": "促销特价",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_TPM_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'TPM' 的含义",
+      "expected_answer": "技术产品经理",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_TPS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'TPS' 的含义",
+      "expected_answer": "技术产品专员",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_TS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'TS' 的含义",
+      "expected_answer": "技术专员",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_TSC_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'TSC' 的含义",
+      "expected_answer": "技术支持中心",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_TSS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'TSS' 的含义",
+      "expected_answer": "技术支持专员",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_TTL_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'TTL' 的含义",
+      "expected_answer": "总计",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_UI_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'UI' 的含义",
+      "expected_answer": "用户界面",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_VAT_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'VAT' 的含义",
+      "expected_answer": "增值税",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_VM_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'VM' 的含义",
+      "expected_answer": "供应商管理",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_VOC_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'VOC' 的含义",
+      "expected_answer": "客户的声音",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_VP_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'VP' 的含义",
+      "expected_answer": "副总裁",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_VPN_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'VPN' 的含义",
+      "expected_answer": "虚拟专用网",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_VTOTE_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'VTOTE' 的含义",
+      "expected_answer": "完成销售指标时的佣金总收入",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_WDA_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'WDA' 的含义",
+      "expected_answer": "工作环境文档评估",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_WEEE_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'WEEE' 的含义",
+      "expected_answer": "废弃电气电子产品",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_WMS_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'WMS' 的含义",
+      "expected_answer": "仓库管理系统",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_YOY_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'YOY' 的含义",
+      "expected_answer": "同比上一年(增长或降低）",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_YTD_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 'YTD' 的含义",
+      "expected_answer": "本年至今",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_1YP_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 '1YP' 的含义",
+      "expected_answer": "年度计划",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "basic_3PL_001",
+      "layer": "基础知识掌握度测试",
+      "instruction": "请解释 '3PL' 的含义",
+      "expected_answer": "第三方物流",
+      "difficulty": "基础"
+    },
+    {
+      "test_id": "confusion_AM_AMGB_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'AM' 和 'AMGB' 的含义",
+      "expected_answer": "能正确区分 AM 和 AMGB",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_AM_AMPV_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'AM' 和 'AMPV' 的含义",
+      "expected_answer": "能正确区分 AM 和 AMPV",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_AMGB_AMPV_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'AMGB' 和 'AMPV' 的含义",
+      "expected_answer": "能正确区分 AMGB 和 AMPV",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_AR_AR%_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'AR' 和 'AR%' 的含义",
+      "expected_answer": "能正确区分 AR 和 AR%",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_AR_ARC_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'AR' 和 'ARC' 的含义",
+      "expected_answer": "能正确区分 AR 和 ARC",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_AR_ART_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'AR' 和 'ART' 的含义",
+      "expected_answer": "能正确区分 AR 和 ART",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_AR%_ARC_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'AR%' 和 'ARC' 的含义",
+      "expected_answer": "能正确区分 AR% 和 ARC",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_AR%_ART_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'AR%' 和 'ART' 的含义",
+      "expected_answer": "能正确区分 AR% 和 ART",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_ARC_ART_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'ARC' 和 'ART' 的含义",
+      "expected_answer": "能正确区分 ARC 和 ART",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_AS_ASP_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'AS' 和 'ASP' 的含义",
+      "expected_answer": "能正确区分 AS 和 ASP",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_BS_BS&P_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'BS' 和 'BS&P' 的含义",
+      "expected_answer": "能正确区分 BS 和 BS&P",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_C&B_C&C_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'C&B' 和 'C&C' 的含义",
+      "expected_answer": "能正确区分 C&B 和 C&C",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_CA_CAPEX_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'CA' 和 'CAPEX' 的含义",
+      "expected_answer": "能正确区分 CA 和 CAPEX",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_CI_CIF_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'CI' 和 'CIF' 的含义",
+      "expected_answer": "能正确区分 CI 和 CIF",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_CRM_CRP_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'CRM' 和 'CRP' 的含义",
+      "expected_answer": "能正确区分 CRM 和 CRP",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_CRM_CRU_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'CRM' 和 'CRU' 的含义",
+      "expected_answer": "能正确区分 CRM 和 CRU",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_CRP_CRU_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'CRP' 和 'CRU' 的含义",
+      "expected_answer": "能正确区分 CRP 和 CRU",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_CS_CSE_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'CS' 和 'CSE' 的含义",
+      "expected_answer": "能正确区分 CS 和 CSE",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_CS_CSR_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'CS' 和 'CSR' 的含义",
+      "expected_answer": "能正确区分 CS 和 CSR",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_CS_CSS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'CS' 和 'CSS' 的含义",
+      "expected_answer": "能正确区分 CS 和 CSS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_CSE_CSR_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'CSE' 和 'CSR' 的含义",
+      "expected_answer": "能正确区分 CSE 和 CSR",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_CSE_CSS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'CSE' 和 'CSS' 的含义",
+      "expected_answer": "能正确区分 CSE 和 CSS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_CSR_CSS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'CSR' 和 'CSS' 的含义",
+      "expected_answer": "能正确区分 CSR 和 CSS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_DDP_DDU_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'DDP' 和 'DDU' 的含义",
+      "expected_answer": "能正确区分 DDP 和 DDU",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_DM_DMCO_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'DM' 和 'DMCO' 的含义",
+      "expected_answer": "能正确区分 DM 和 DMCO",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_DM_DMGO_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'DM' 和 'DMGO' 的含义",
+      "expected_answer": "能正确区分 DM 和 DMGO",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_DMCO_DMGO_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'DMCO' 和 'DMGO' 的含义",
+      "expected_answer": "能正确区分 DMCO 和 DMGO",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_DOA_DOS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'DOA' 和 'DOS' 的含义",
+      "expected_answer": "能正确区分 DOA 和 DOS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_DT_DT- METRO_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'DT' 和 'DT- METRO' 的含义",
+      "expected_answer": "能正确区分 DT 和 DT- METRO",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_EE_EES_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'EE' 和 'EES' 的含义",
+      "expected_answer": "能正确区分 EE 和 EES",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_EI_EIF_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'EI' 和 'EIF' 的含义",
+      "expected_answer": "能正确区分 EI 和 EIF",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_EOL_EOS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'EOL' 和 'EOS' 的含义",
+      "expected_answer": "能正确区分 EOL 和 EOS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_EOL_EOSS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'EOL' 和 'EOSS' 的含义",
+      "expected_answer": "能正确区分 EOL 和 EOSS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_EOS_EOSS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'EOS' 和 'EOSS' 的含义",
+      "expected_answer": "能正确区分 EOS 和 EOSS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_EPBB_EPC_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'EPBB' 和 'EPC' 的含义",
+      "expected_answer": "能正确区分 EPBB 和 EPC",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_EPBB_EPS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'EPBB' 和 'EPS' 的含义",
+      "expected_answer": "能正确区分 EPBB 和 EPS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_EPC_EPS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'EPC' 和 'EPS' 的含义",
+      "expected_answer": "能正确区分 EPC 和 EPS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_ES_ESS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'ES' 和 'ESS' 的含义",
+      "expected_answer": "能正确区分 ES 和 ESS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_ES_EST._001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'ES' 和 'EST.' 的含义",
+      "expected_answer": "能正确区分 ES 和 EST.",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_ESS_EST._001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'ESS' 和 'EST.' 的含义",
+      "expected_answer": "能正确区分 ESS 和 EST.",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_ETA_ETD_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'ETA' 和 'ETD' 的含义",
+      "expected_answer": "能正确区分 ETA 和 ETD",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FB_FBAP_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FB' 和 'FBAP' 的含义",
+      "expected_answer": "能正确区分 FB 和 FBAP",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FB_FBCN_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FB' 和 'FBCN' 的含义",
+      "expected_answer": "能正确区分 FB 和 FBCN",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FB_FBBD_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FB' 和 'FBBD' 的含义",
+      "expected_answer": "能正确区分 FB 和 FBBD",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FB_FBBS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FB' 和 'FBBS' 的含义",
+      "expected_answer": "能正确区分 FB 和 FBBS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FB_FBLS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FB' 和 'FBLS' 的含义",
+      "expected_answer": "能正确区分 FB 和 FBLS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FB_FBSH_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FB' 和 'FBSH' 的含义",
+      "expected_answer": "能正确区分 FB 和 FBSH",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FB_FBGP_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FB' 和 'FBGP' 的含义",
+      "expected_answer": "能正确区分 FB 和 FBGP",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FB_FBEMS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FB' 和 'FBEMS' 的含义",
+      "expected_answer": "能正确区分 FB 和 FBEMS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FB_FBSZ_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FB' 和 'FBSZ' 的含义",
+      "expected_answer": "能正确区分 FB 和 FBSZ",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FB_FBOIC_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FB' 和 'FBOIC' 的含义",
+      "expected_answer": "能正确区分 FB 和 FBOIC",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBAP_FBCN_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBAP' 和 'FBCN' 的含义",
+      "expected_answer": "能正确区分 FBAP 和 FBCN",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBAP_FBBD_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBAP' 和 'FBBD' 的含义",
+      "expected_answer": "能正确区分 FBAP 和 FBBD",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBAP_FBBS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBAP' 和 'FBBS' 的含义",
+      "expected_answer": "能正确区分 FBAP 和 FBBS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBAP_FBLS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBAP' 和 'FBLS' 的含义",
+      "expected_answer": "能正确区分 FBAP 和 FBLS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBAP_FBSH_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBAP' 和 'FBSH' 的含义",
+      "expected_answer": "能正确区分 FBAP 和 FBSH",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBAP_FBGP_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBAP' 和 'FBGP' 的含义",
+      "expected_answer": "能正确区分 FBAP 和 FBGP",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBAP_FBEMS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBAP' 和 'FBEMS' 的含义",
+      "expected_answer": "能正确区分 FBAP 和 FBEMS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBAP_FBSZ_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBAP' 和 'FBSZ' 的含义",
+      "expected_answer": "能正确区分 FBAP 和 FBSZ",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBAP_FBOIC_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBAP' 和 'FBOIC' 的含义",
+      "expected_answer": "能正确区分 FBAP 和 FBOIC",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FFCN_FFPS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FFCN' 和 'FFPS' 的含义",
+      "expected_answer": "能正确区分 FFCN 和 FFPS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBCN_FBBD_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBCN' 和 'FBBD' 的含义",
+      "expected_answer": "能正确区分 FBCN 和 FBBD",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBCN_FBBS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBCN' 和 'FBBS' 的含义",
+      "expected_answer": "能正确区分 FBCN 和 FBBS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBCN_FBLS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBCN' 和 'FBLS' 的含义",
+      "expected_answer": "能正确区分 FBCN 和 FBLS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBCN_FBSH_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBCN' 和 'FBSH' 的含义",
+      "expected_answer": "能正确区分 FBCN 和 FBSH",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBCN_FBGP_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBCN' 和 'FBGP' 的含义",
+      "expected_answer": "能正确区分 FBCN 和 FBGP",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBCN_FBEMS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBCN' 和 'FBEMS' 的含义",
+      "expected_answer": "能正确区分 FBCN 和 FBEMS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBCN_FBSZ_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBCN' 和 'FBSZ' 的含义",
+      "expected_answer": "能正确区分 FBCN 和 FBSZ",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBCN_FBOIC_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBCN' 和 'FBOIC' 的含义",
+      "expected_answer": "能正确区分 FBCN 和 FBOIC",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBBD_FBBS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBBD' 和 'FBBS' 的含义",
+      "expected_answer": "能正确区分 FBBD 和 FBBS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBBD_FBLS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBBD' 和 'FBLS' 的含义",
+      "expected_answer": "能正确区分 FBBD 和 FBLS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBBD_FBSH_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBBD' 和 'FBSH' 的含义",
+      "expected_answer": "能正确区分 FBBD 和 FBSH",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBBD_FBGP_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBBD' 和 'FBGP' 的含义",
+      "expected_answer": "能正确区分 FBBD 和 FBGP",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBBD_FBEMS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBBD' 和 'FBEMS' 的含义",
+      "expected_answer": "能正确区分 FBBD 和 FBEMS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBBD_FBSZ_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBBD' 和 'FBSZ' 的含义",
+      "expected_answer": "能正确区分 FBBD 和 FBSZ",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBBD_FBOIC_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBBD' 和 'FBOIC' 的含义",
+      "expected_answer": "能正确区分 FBBD 和 FBOIC",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBBS_FBLS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBBS' 和 'FBLS' 的含义",
+      "expected_answer": "能正确区分 FBBS 和 FBLS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBBS_FBSH_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBBS' 和 'FBSH' 的含义",
+      "expected_answer": "能正确区分 FBBS 和 FBSH",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBBS_FBGP_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBBS' 和 'FBGP' 的含义",
+      "expected_answer": "能正确区分 FBBS 和 FBGP",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBBS_FBEMS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBBS' 和 'FBEMS' 的含义",
+      "expected_answer": "能正确区分 FBBS 和 FBEMS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBBS_FBSZ_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBBS' 和 'FBSZ' 的含义",
+      "expected_answer": "能正确区分 FBBS 和 FBSZ",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBBS_FBOIC_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBBS' 和 'FBOIC' 的含义",
+      "expected_answer": "能正确区分 FBBS 和 FBOIC",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBLS_FBSH_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBLS' 和 'FBSH' 的含义",
+      "expected_answer": "能正确区分 FBLS 和 FBSH",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBLS_FBGP_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBLS' 和 'FBGP' 的含义",
+      "expected_answer": "能正确区分 FBLS 和 FBGP",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBLS_FBEMS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBLS' 和 'FBEMS' 的含义",
+      "expected_answer": "能正确区分 FBLS 和 FBEMS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBLS_FBSZ_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBLS' 和 'FBSZ' 的含义",
+      "expected_answer": "能正确区分 FBLS 和 FBSZ",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBLS_FBOIC_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBLS' 和 'FBOIC' 的含义",
+      "expected_answer": "能正确区分 FBLS 和 FBOIC",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBSH_FBGP_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBSH' 和 'FBGP' 的含义",
+      "expected_answer": "能正确区分 FBSH 和 FBGP",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBSH_FBEMS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBSH' 和 'FBEMS' 的含义",
+      "expected_answer": "能正确区分 FBSH 和 FBEMS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBSH_FBSZ_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBSH' 和 'FBSZ' 的含义",
+      "expected_answer": "能正确区分 FBSH 和 FBSZ",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBSH_FBOIC_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBSH' 和 'FBOIC' 的含义",
+      "expected_answer": "能正确区分 FBSH 和 FBOIC",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBGP_FBEMS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBGP' 和 'FBEMS' 的含义",
+      "expected_answer": "能正确区分 FBGP 和 FBEMS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBGP_FBSZ_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBGP' 和 'FBSZ' 的含义",
+      "expected_answer": "能正确区分 FBGP 和 FBSZ",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBGP_FBOIC_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBGP' 和 'FBOIC' 的含义",
+      "expected_answer": "能正确区分 FBGP 和 FBOIC",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBEMS_FBSZ_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBEMS' 和 'FBSZ' 的含义",
+      "expected_answer": "能正确区分 FBEMS 和 FBSZ",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBEMS_FBOIC_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBEMS' 和 'FBOIC' 的含义",
+      "expected_answer": "能正确区分 FBEMS 和 FBOIC",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FBSZ_FBOIC_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FBSZ' 和 'FBOIC' 的含义",
+      "expected_answer": "能正确区分 FBSZ 和 FBOIC",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_FOB_FOC_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'FOB' 和 'FOC' 的含义",
+      "expected_answer": "能正确区分 FOB 和 FOC",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_GM_GM FLOOR_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'GM' 和 'GM FLOOR' 的含义",
+      "expected_answer": "能正确区分 GM 和 GM FLOOR",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_HC_HCF_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'HC' 和 'HCF' 的含义",
+      "expected_answer": "能正确区分 HC 和 HCF",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_HR_HRIS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'HR' 和 'HRIS' 的含义",
+      "expected_answer": "能正确区分 HR 和 HRIS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_IE_IEC_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'IE' 和 'IEC' 的含义",
+      "expected_answer": "能正确区分 IE 和 IEC",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_ISMS_ISO_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'ISMS' 和 'ISO' 的含义",
+      "expected_answer": "能正确区分 ISMS 和 ISO",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_ISMS_ISP_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'ISMS' 和 'ISP' 的含义",
+      "expected_answer": "能正确区分 ISMS 和 ISP",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_ISO_ISP_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'ISO' 和 'ISP' 的含义",
+      "expected_answer": "能正确区分 ISO 和 ISP",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_KAM_KAT_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'KAM' 和 'KAT' 的含义",
+      "expected_answer": "能正确区分 KAM 和 KAT",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_LOB_LOS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'LOB' 和 'LOS' 的含义",
+      "expected_answer": "能正确区分 LOB 和 LOS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_LP_LPC_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'LP' 和 'LPC' 的含义",
+      "expected_answer": "能正确区分 LP 和 LPC",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_LP_LPM_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'LP' 和 'LPM' 的含义",
+      "expected_answer": "能正确区分 LP 和 LPM",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_LPC_LPM_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'LPC' 和 'LPM' 的含义",
+      "expected_answer": "能正确区分 LPC 和 LPM",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_M/C_M/H_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'M/C' 和 'M/H' 的含义",
+      "expected_answer": "能正确区分 M/C 和 M/H",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_MFD_MFP_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'MFD' 和 'MFP' 的含义",
+      "expected_answer": "能正确区分 MFD 和 MFP",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_MIF_MIS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'MIF' 和 'MIS' 的含义",
+      "expected_answer": "能正确区分 MIF 和 MIS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_MMI_MMP_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'MMI' 和 'MMP' 的含义",
+      "expected_answer": "能正确区分 MMI 和 MMP",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_MPS_MPS GUARDIA_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'MPS' 和 'MPS GUARDIA' 的含义",
+      "expected_answer": "能正确区分 MPS 和 MPS GUARDIA",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_MRM_MRP_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'MRM' 和 'MRP' 的含义",
+      "expected_answer": "能正确区分 MRM 和 MRP",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_OP._OPCOS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'OP.' 和 'OPCOS' 的含义",
+      "expected_answer": "能正确区分 OP. 和 OPCOS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_PCM_PCR_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'PCM' 和 'PCR' 的含义",
+      "expected_answer": "能正确区分 PCM 和 PCR",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_PCM_PCS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'PCM' 和 'PCS' 的含义",
+      "expected_answer": "能正确区分 PCM 和 PCS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_PCR_PCS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'PCR' 和 'PCS' 的含义",
+      "expected_answer": "能正确区分 PCR 和 PCS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_PDCA_PDR_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'PDCA' 和 'PDR' 的含义",
+      "expected_answer": "能正确区分 PDCA 和 PDR",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_PM_PMR_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'PM' 和 'PMR' 的含义",
+      "expected_answer": "能正确区分 PM 和 PMR",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_PP_PPM_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'PP' 和 'PPM' 的含义",
+      "expected_answer": "能正确区分 PP 和 PPM",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_PP_PPSP_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'PP' 和 'PPSP' 的含义",
+      "expected_answer": "能正确区分 PP 和 PPSP",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_PPM_PPSP_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'PPM' 和 'PPSP' 的含义",
+      "expected_answer": "能正确区分 PPM 和 PPSP",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_RSDM_RSD_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'RSDM' 和 'RSD' 的含义",
+      "expected_answer": "能正确区分 RSDM 和 RSD",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_RMA_RML_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'RMA' 和 'RML' 的含义",
+      "expected_answer": "能正确区分 RMA 和 RML",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_ROHS_ROS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'ROHS' 和 'ROS' 的含义",
+      "expected_answer": "能正确区分 ROHS 和 ROS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_SA_SARG_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'SA' 和 'SARG' 的含义",
+      "expected_answer": "能正确区分 SA 和 SARG",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_SC_SCM_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'SC' 和 'SCM' 的含义",
+      "expected_answer": "能正确区分 SC 和 SCM",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_SSC_SSE_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'SSC' 和 'SSE' 的含义",
+      "expected_answer": "能正确区分 SSC 和 SSE",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_SSC_SSM_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'SSC' 和 'SSM' 的含义",
+      "expected_answer": "能正确区分 SSC 和 SSM",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_SSC_SSM FLOOR_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'SSC' 和 'SSM FLOOR' 的含义",
+      "expected_answer": "能正确区分 SSC 和 SSM FLOOR",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_SDCC_SDM_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'SDCC' 和 'SDM' 的含义",
+      "expected_answer": "能正确区分 SDCC 和 SDM",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_SDCC_SDO_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'SDCC' 和 'SDO' 的含义",
+      "expected_answer": "能正确区分 SDCC 和 SDO",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_SDM_SDO_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'SDM' 和 'SDO' 的含义",
+      "expected_answer": "能正确区分 SDM 和 SDO",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_SI_SIP_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'SI' 和 'SIP' 的含义",
+      "expected_answer": "能正确区分 SI 和 SIP",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_SM_SME_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'SM' 和 'SME' 的含义",
+      "expected_answer": "能正确区分 SM 和 SME",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_SM_SMF_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'SM' 和 'SMF' 的含义",
+      "expected_answer": "能正确区分 SM 和 SMF",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_SM_SMP_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'SM' 和 'SMP' 的含义",
+      "expected_answer": "能正确区分 SM 和 SMP",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_SM_SMS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'SM' 和 'SMS' 的含义",
+      "expected_answer": "能正确区分 SM 和 SMS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_SME_SMF_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'SME' 和 'SMF' 的含义",
+      "expected_answer": "能正确区分 SME 和 SMF",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_SME_SMP_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'SME' 和 'SMP' 的含义",
+      "expected_answer": "能正确区分 SME 和 SMP",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_SME_SMS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'SME' 和 'SMS' 的含义",
+      "expected_answer": "能正确区分 SME 和 SMS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_SMF_SMP_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'SMF' 和 'SMP' 的含义",
+      "expected_answer": "能正确区分 SMF 和 SMP",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_SMF_SMS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'SMF' 和 'SMS' 的含义",
+      "expected_answer": "能正确区分 SMF 和 SMS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_SMP_SMS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'SMP' 和 'SMS' 的含义",
+      "expected_answer": "能正确区分 SMP 和 SMS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_SO&S_SOW_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'SO&S' 和 'SOW' 的含义",
+      "expected_answer": "能正确区分 SO&S 和 SOW",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_SO&S_SOWA_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'SO&S' 和 'SOWA' 的含义",
+      "expected_answer": "能正确区分 SO&S 和 SOWA",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_SOW_SOWA_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'SOW' 和 'SOWA' 的含义",
+      "expected_answer": "能正确区分 SOW 和 SOWA",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_SPCC_SPM_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'SPCC' 和 'SPM' 的含义",
+      "expected_answer": "能正确区分 SPCC 和 SPM",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_SPCC_SPR_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'SPCC' 和 'SPR' 的含义",
+      "expected_answer": "能正确区分 SPCC 和 SPR",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_SPM_SPR_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'SPM' 和 'SPR' 的含义",
+      "expected_answer": "能正确区分 SPM 和 SPR",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_SSE_SSM_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'SSE' 和 'SSM' 的含义",
+      "expected_answer": "能正确区分 SSE 和 SSM",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_SSE_SSM FLOOR_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'SSE' 和 'SSM FLOOR' 的含义",
+      "expected_answer": "能正确区分 SSE 和 SSM FLOOR",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_SSM_SSM FLOOR_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'SSM' 和 'SSM FLOOR' 的含义",
+      "expected_answer": "能正确区分 SSM 和 SSM FLOOR",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_TC_TCLR_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'TC' 和 'TCLR' 的含义",
+      "expected_answer": "能正确区分 TC 和 TCLR",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_TC_TCO_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'TC' 和 'TCO' 的含义",
+      "expected_answer": "能正确区分 TC 和 TCO",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_TCLR_TCO_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'TCLR' 和 'TCO' 的含义",
+      "expected_answer": "能正确区分 TCLR 和 TCO",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_TP_TPA_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'TP' 和 'TPA' 的含义",
+      "expected_answer": "能正确区分 TP 和 TPA",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_TP_TPM_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'TP' 和 'TPM' 的含义",
+      "expected_answer": "能正确区分 TP 和 TPM",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_TP_TPS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'TP' 和 'TPS' 的含义",
+      "expected_answer": "能正确区分 TP 和 TPS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_TPA_TPM_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'TPA' 和 'TPM' 的含义",
+      "expected_answer": "能正确区分 TPA 和 TPM",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_TPA_TPS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'TPA' 和 'TPS' 的含义",
+      "expected_answer": "能正确区分 TPA 和 TPS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_TPM_TPS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'TPM' 和 'TPS' 的含义",
+      "expected_answer": "能正确区分 TPM 和 TPS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_TS_TSC_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'TS' 和 'TSC' 的含义",
+      "expected_answer": "能正确区分 TS 和 TSC",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_TS_TSS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'TS' 和 'TSS' 的含义",
+      "expected_answer": "能正确区分 TS 和 TSS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_TSC_TSS_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'TSC' 和 'TSS' 的含义",
+      "expected_answer": "能正确区分 TSC 和 TSS",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "confusion_VP_VPN_001",
+      "layer": "混淆和边界测试",
+      "instruction": "请区分 'VP' 和 'VPN' 的含义",
+      "expected_answer": "能正确区分 VP 和 VPN",
+      "difficulty": "中等"
+    },
+    {
+      "test_id": "real_CRM_scenario_001",
+      "layer": "真实场景模拟测试",
+      "instruction": "CRM系统出现故障，需要技术支持",
+      "expected_answer": "能理解CRM的含义并在业务场景中应用",
+      "difficulty": "高级"
+    },
+    {
+      "test_id": "real_AMPV_scenario_001",
+      "layer": "真实场景模拟测试",
+      "instruction": "请帮我找一下AMPV相关的文档",
+      "expected_answer": "能理解AMPV的含义并在业务场景中应用",
+      "difficulty": "高级"
+    },
+    {
+      "test_id": "real_EOSS_scenario_001",
+      "layer": "真实场景模拟测试",
+      "instruction": "我们公司的EOSS项目什么时候启动？",
+      "expected_answer": "能理解EOSS的含义并在业务场景中应用",
+      "difficulty": "高级"
+    },
+    {
+      "test_id": "real_BPO_scenario_001",
+      "layer": "真实场景模拟测试",
+      "instruction": "请帮我找一下BPO相关的文档",
+      "expected_answer": "能理解BPO的含义并在业务场景中应用",
+      "difficulty": "高级"
+    },
+    {
+      "test_id": "real_3PL_scenario_001",
+      "layer": "真实场景模拟测试",
+      "instruction": "我们公司的3PL项目什么时候启动？",
+      "expected_answer": "能理解3PL的含义并在业务场景中应用",
+      "difficulty": "高级"
+    },
+    {
+      "test_id": "real_GM_scenario_001",
+      "layer": "真实场景模拟测试",
+      "instruction": "GM系统出现故障，需要技术支持",
+      "expected_answer": "能理解GM的含义并在业务场景中应用",
+      "difficulty": "高级"
+    },
+    {
+      "test_id": "real_OS_scenario_001",
+      "layer": "真实场景模拟测试",
+      "instruction": "我们公司的OS项目什么时候启动？",
+      "expected_answer": "能理解OS的含义并在业务场景中应用",
+      "difficulty": "高级"
+    },
+    {
+      "test_id": "real_VPN_scenario_001",
+      "layer": "真实场景模拟测试",
+      "instruction": "请帮我找一下VPN相关的文档",
+      "expected_answer": "能理解VPN的含义并在业务场景中应用",
+      "difficulty": "高级"
+    },
+    {
+      "test_id": "real_S&S_scenario_001",
+      "layer": "真实场景模拟测试",
+      "instruction": "请帮我找一下S&S相关的文档",
+      "expected_answer": "能理解S&S的含义并在业务场景中应用",
+      "difficulty": "高级"
+    },
+    {
+      "test_id": "real_ARC_scenario_001",
+      "layer": "真实场景模拟测试",
+      "instruction": "我们公司的ARC项目什么时候启动？",
+      "expected_answer": "能理解ARC的含义并在业务场景中应用",
+      "difficulty": "高级"
+    },
+    {
+      "test_id": "real_CRP_scenario_001",
+      "layer": "真实场景模拟测试",
+      "instruction": "请帮我找一下CRP相关的文档",
+      "expected_answer": "能理解CRP的含义并在业务场景中应用",
+      "difficulty": "高级"
+    },
+    {
+      "test_id": "real_1YP_scenario_001",
+      "layer": "真实场景模拟测试",
+      "instruction": "1YP系统出现故障，需要技术支持",
+      "expected_answer": "能理解1YP的含义并在业务场景中应用",
+      "difficulty": "高级"
+    },
+    {
+      "test_id": "real_SPM_scenario_001",
+      "layer": "真实场景模拟测试",
+      "instruction": "我们公司的SPM项目什么时候启动？",
+      "expected_answer": "能理解SPM的含义并在业务场景中应用",
+      "difficulty": "高级"
+    },
+    {
+      "test_id": "real_TCLR_scenario_001",
+      "layer": "真实场景模拟测试",
+      "instruction": "TCLR系统出现故障，需要技术支持",
+      "expected_answer": "能理解TCLR的含义并在业务场景中应用",
+      "difficulty": "高级"
+    },
+    {
+      "test_id": "real_GM FLOOR_scenario_001",
+      "layer": "真实场景模拟测试",
+      "instruction": "我们公司的GM FLOOR项目什么时候启动？",
+      "expected_answer": "能理解GM FLOOR的含义并在业务场景中应用",
+      "difficulty": "高级"
+    },
+    {
+      "test_id": "real_PQI_scenario_001",
+      "layer": "真实场景模拟测试",
+      "instruction": "请帮我找一下PQI相关的文档",
+      "expected_answer": "能理解PQI的含义并在业务场景中应用",
+      "difficulty": "高级"
+    },
+    {
+      "test_id": "real_ROS_scenario_001",
+      "layer": "真实场景模拟测试",
+      "instruction": "我们公司的ROS项目什么时候启动？",
+      "expected_answer": "能理解ROS的含义并在业务场景中应用",
+      "difficulty": "高级"
+    },
+    {
+      "test_id": "real_HRIS_scenario_001",
+      "layer": "真实场景模拟测试",
+      "instruction": "我们公司的HRIS项目什么时候启动？",
+      "expected_answer": "能理解HRIS的含义并在业务场景中应用",
+      "difficulty": "高级"
+    },
+    {
+      "test_id": "real_JDF_scenario_001",
+      "layer": "真实场景模拟测试",
+      "instruction": "请帮我找一下JDF相关的文档",
+      "expected_answer": "能理解JDF的含义并在业务场景中应用",
+      "difficulty": "高级"
+    },
+    {
+      "test_id": "real_DMGO_scenario_001",
+      "layer": "真实场景模拟测试",
+      "instruction": "DMGO系统出现故障，需要技术支持",
+      "expected_answer": "能理解DMGO的含义并在业务场景中应用",
+      "difficulty": "高级"
+    },
+    {
+      "test_id": "real_fake_XYZ_001",
+      "layer": "真实场景模拟测试",
+      "instruction": "请解释 'XYZ' 的含义",
+      "expected_answer": "应该表示不知道或无法识别",
+      "difficulty": "高级"
+    },
+    {
+      "test_id": "real_fake_ABC_001",
+      "layer": "真实场景模拟测试",
+      "instruction": "请解释 'ABC' 的含义",
+      "expected_answer": "应该表示不知道或无法识别",
+      "difficulty": "高级"
+    },
+    {
+      "test_id": "real_fake_DEF_001",
+      "layer": "真实场景模拟测试",
+      "instruction": "请解释 'DEF' 的含义",
+      "expected_answer": "应该表示不知道或无法识别",
+      "difficulty": "高级"
+    }
+  ]
+}

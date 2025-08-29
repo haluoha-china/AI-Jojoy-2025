@@ -1,0 +1,18 @@
+{
+  "company_abbreviations_train": {
+    "file_name": "train_data_final.jsonl",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "company_abbreviations_eval": {
+    "file_name": "eval_data_final.jsonl",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  }
+}

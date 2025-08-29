@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>企业知识库 - 智能问答系统</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+        
+        .main-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px 0;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 25px;
+        }
+        
+        .card-header {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            border-radius: 15px 15px 0 0 !important;
+            padding: 20px;
+            font-weight: 600;
+        }
+        
+        .chat-container {
+            height: 500px;
+            overflow-y: auto;
+            border: 1px solid #e9ecef;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #f8f9fa;
+        }
+        
+        .message {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 15px;
+            max-width: 80%;
+            word-wrap: break-word;
+        }
+        
+        .user-message {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin-left: auto;
+            text-align: right;
+        }
+        
+        .bot-message {
+            background: white;
+            border: 1px solid #e9ecef;
+            margin-right: auto;
+        }
+        
+        .system-message {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            border: 1px solid #ffd8a8;
+            text-align: center;
+            margin: 0 auto 20px auto;
+            max-width: 90%;
+        }
+        
+        .upload-area {
+            border: 2px dashed #dee2e6;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            background-color: #f8f9fa;
+            transition: all 0.3s ease;
+        }
+        
+        .upload-area:hover {
+            border-color: #667eea;
+            background-color: #e3f2fd;
+        }
+        
+        .upload-area.dragover {
+            border-color: #667eea;
+            background-color: #e3f2fd;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            border-radius: 25px;
+            padding: 10px 25px;
+        }
+        
+        .btn-success {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            border: none;
+            border-radius: 25px;
+            padding: 10px 25px;
+        }
+        
+        .btn-info {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            border: none;
+            border-radius: 25px;
+            padding: 10px 25px;
+            color: #333;
+        }
+        
+        .form-control {
+            border-radius: 25px;
+            border: 1px solid #e9ecef;
+            padding: 12px 20px;
+        }
+        
+        .form-control:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+        }
+        
+        .status-indicator {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        
+        .status-online {
+            background-color: #28a745;
+        }
+        
+        .status-offline {
+            background-color: #dc3545;
+        }
+        
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .source-item {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .source-item .page-info {
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .source-item .similarity {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        
+        .stats-card {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .stats-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .stats-label {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        
+        .file-list {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        
+        .file-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .file-item:last-child {
+            border-bottom: none;
+        }
+        
+        .file-info {
+            flex: 1;
+        }
+        
+        .file-name {
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .file-meta {
+            font-size: 0.8rem;
+            color: #6c757d;
+        }
+        
+        .progress-container {
+            margin: 20px 0;
+        }
+        
+        .progress {
+            height: 25px;
+            border-radius: 15px;
+        }
+        
+        .progress-bar {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .alert {
+            border-radius: 10px;
+            border: none;
+        }
+        
+        .alert-success {
+            background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+            color: #155724;
+        }
+        
+        .alert-danger {
+            background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
+            color: #721c24;
+        }
+        
+        .alert-info {
+            background: linear-gradient(135deg, #d1ecf1 0%, #bee5eb 100%);
+            color: #0c5460;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #6c757d;
+            border-top: 1px solid #e9ecef;
+            margin-top: 50px;
+        }
+        
+        @media (max-width: 768px) {
+            .main-container {
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .chat-container {
+                height: 400px;
+            }
+            
+            .message {
+                max-width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <!-- 头部 -->
+        <div class="header">
+            <h1><i class="bi bi-brain"></i> 企业知识库</h1>
+            <p>智能文档解析 · 精准知识检索 · 专业问答助手</p>
+        </div>
+        
+        <!-- 系统状态 -->
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="card stats-card">
+                    <div class="stats-number" id="totalChunks">-</div>
+                    <div class="stats-label">文本块</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card stats-card">
+                    <div class="stats-number" id="totalPages">-</div>
+                    <div class="stats-label">文档页数</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card stats-card">
+                    <div class="stats-number" id="totalFiles">-</div>
+                    <div class="stats-label">上传文件</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card stats-card">
+                    <div class="stats-number" id="totalConversations">-</div>
+                    <div class="stats-label">对话次数</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <!-- 左侧：文档上传和文件管理 -->
+            <div class="col-md-4">
+                <!-- 文档上传 -->
+                <div class="card">
+                    <div class="card-header">
+                        <i class="bi bi-cloud-upload"></i> 文档上传
+                    </div>
+                    <div class="card-body">
+                        <div class="upload-area" id="uploadArea">
+                            <i class="bi bi-file-earmark-text" style="font-size: 3rem; color: #6c757d;"></i>
+                            <p class="mt-3">拖拽文件到此处或点击选择文件</p>
+                            <p class="text-muted">支持 PDF、Word、TXT 格式</p>
+                            <input type="file" id="documentFile" accept=".pdf,.doc,.docx,.txt" style="display: none;">
+                            <button class="btn btn-primary mt-3" onclick="document.getElementById('documentFile').click()">
+                                <i class="bi bi-folder2-open"></i> 选择文件
+                            </button>
+                        </div>
+                        
+                        <div id="uploadProgress" class="progress-container" style="display: none;">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%"></div>
+                            </div>
+                            <p class="text-center mt-2" id="progressText">准备中...</p>
+                        </div>
+                        
+                        <div id="uploadStatus"></div>
+                    </div>
+                </div>
+                
+                <!-- 文件列表 -->
+                <div class="card">
+                    <div class="card-header">
+                        <i class="bi bi-files"></i> 已上传文件
+                        <button class="btn btn-sm btn-info float-end" onclick="refreshFileList()">
+                            <i class="bi bi-arrow-clockwise"></i>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <div id="fileList" class="file-list">
+                            <p class="text-center text-muted">暂无文件</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 系统信息 -->
+                <div class="card">
+                    <div class="card-header">
+                        <i class="bi bi-info-circle"></i> 系统信息
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-2">
+                            <span class="status-indicator status-online"></span>
+                            <span>系统状态: <span id="systemStatus">运行中</span></span>
+                        </div>
+                        <div class="mb-2">
+                            <span>向量索引: <span id="indexStatus">未构建</span></span>
+                        </div>
+                        <div class="mb-2">
+                            <span>RAG系统: <span id="ragStatus">未初始化</span></span>
+                        </div>
+                        <button class="btn btn-sm btn-info w-100" onclick="refreshSystemInfo()">
+                            <i class="bi bi-arrow-clockwise"></i> 刷新状态
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 右侧：问答界面 -->
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="bi bi-chat-dots"></i> 智能问答
+                        <div class="float-end">
+                            <button class="btn btn-sm btn-info me-2" onclick="clearHistory()">
+                                <i class="bi bi-trash"></i> 清空历史
+                            </button>
+                            <button class="btn btn-sm btn-info" onclick="exportHistory()">
+                                <i class="bi bi-download"></i> 导出历史
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div id="chatContainer" class="chat-container">
+                            <div class="message system-message">
+                                <i class="bi bi-lightbulb"></i> 欢迎使用企业知识库！请先上传文档，然后就可以向我提问了。
+                            </div>
+                        </div>
+                        
+                        <form id="questionForm">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="questionInput" 
+                                       placeholder="请输入您的问题..." autocomplete="off">
+                                <button class="btn btn-success" type="submit" id="submitBtn">
+                                    <i class="bi bi-send"></i> 提问
+                                </button>
+                            </div>
+                        </form>
+                        
+                        <!-- 高级选项 -->
+                        <div class="mt-3">
+                            <button class="btn btn-sm btn-outline-secondary" type="button" 
+                                    data-bs-toggle="collapse" data-bs-target="#advancedOptions">
+                                <i class="bi bi-gear"></i> 高级选项
+                            </button>
+                            <div class="collapse mt-2" id="advancedOptions">
+                                <div class="card card-body">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label class="form-label">检索数量</label>
+                                            <select class="form-select" id="topKSelect">
+                                                <option value="3">3个结果</option>
+                                                <option value="5" selected>5个结果</option>
+                                                <option value="10">10个结果</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label">相似度阈值</label>
+                                            <input type="range" class="form-range" id="scoreThreshold" 
+                                                   min="0" max="1" step="0.1" value="0.3">
+                                            <span id="thresholdValue">0.3</span>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label">显示上下文</label>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="includeContext" checked>
+                                                <label class="form-check-label">包含检索上下文</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 页脚 -->
+        <div class="footer">
+            <p>&copy; 2025 企业知识库系统 | 基于 RAG + 向量检索技术</p>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // 全局变量
+        let isProcessing = false;
+        
+        // 页面加载完成后初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeApp();
+            setupEventListeners();
+            refreshSystemInfo();
+            refreshFileList();
+        });
+        
+        function initializeApp() {
+            // 初始化拖拽上传
+            const uploadArea = document.getElementById('uploadArea');
+            const fileInput = document.getElementById('documentFile');
+            
+            // 拖拽事件
+            uploadArea.addEventListener('dragover', function(e) {
+                e.preventDefault();
+                uploadArea.classList.add('dragover');
+            });
+            
+            uploadArea.addEventListener('dragleave', function(e) {
+                e.preventDefault();
+                uploadArea.classList.remove('dragover');
+            });
+            
+            uploadArea.addEventListener('drop', function(e) {
+                e.preventDefault();
+                uploadArea.classList.remove('dragover');
+                const files = e.dataTransfer.files;
+                if (files.length > 0) {
+                    handleFileUpload(files[0]);
+                }
+            });
+            
+            // 文件选择事件
+            fileInput.addEventListener('change', function(e) {
+                if (e.target.files.length > 0) {
+                    handleFileUpload(e.target.files[0]);
+                }
+            });
+            
+            // 相似度阈值滑块
+            const thresholdSlider = document.getElementById('scoreThreshold');
+            const thresholdValue = document.getElementById('thresholdValue');
+            thresholdSlider.addEventListener('input', function() {
+                thresholdValue.textContent = this.value;
+            });
+        }
+        
+        function setupEventListeners() {
+            // 问题提交表单
+            document.getElementById('questionForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                submitQuestion();
+            });
+            
+            // 回车键提交
+            document.getElementById('questionInput').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                    e.preventDefault();
+                    submitQuestion();
+                }
+            });
+        }
+        
+        function handleFileUpload(file) {
+            if (!file) return;
+            
+            // 检查文件类型
+            const allowedTypes = ['application/pdf', 'application/msword', 
+                                 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'text/plain'];
+            if (!allowedTypes.includes(file.type) && !file.name.match(/\.(pdf|doc|docx|txt)$/i)) {
+                showAlert('不支持的文件类型，请上传 PDF、Word 或 TXT 文件', 'danger');
+                return;
+            }
+            
+            // 检查文件大小
+            if (file.size > 100 * 1024 * 1024) { // 100MB
+                showAlert('文件过大，请上传小于 100MB 的文件', 'danger');
+                return;
+            }
+            
+            // 显示上传进度
+            showUploadProgress();
+            
+            // 创建 FormData
+            const formData = new FormData();
+            formData.append('file', file);
+            
+            // 上传文件
+            fetch('/upload', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                hideUploadProgress();
+                
+                if (data.error) {
+                    showAlert(data.error, 'danger');
+                } else {
+                    showAlert(data.message, 'success');
+                    addSystemMessage(`文档"${data.filename}"上传成功！共解析出${data.parse_result.total_pages}页，${data.chunks_info.total_chunks}个文本块。`);
+                    
+                    // 更新统计信息
+                    updateStats(data);
+                    
+                    // 刷新文件列表
+                    refreshFileList();
+                    
+                    // 刷新系统信息
+                    refreshSystemInfo();
+                }
+            })
+            .catch(error => {
+                hideUploadProgress();
+                showAlert('上传失败：' + error.message, 'danger');
+            });
+        }
+        
+        function submitQuestion() {
+            const questionInput = document.getElementById('questionInput');
+            const question = questionInput.value.trim();
+            
+            if (!question) {
+                showAlert('请输入问题', 'warning');
+                return;
+            }
+            
+            if (isProcessing) {
+                showAlert('正在处理中，请稍候...', 'info');
+                return;
+            }
+            
+            // 添加用户问题到聊天界面
+            addMessage(question, 'user');
+            questionInput.value = '';
+            
+            // 设置处理状态
+            isProcessing = true;
+            const submitBtn = document.getElementById('submitBtn');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<span class="loading"></span> 处理中...';
+            submitBtn.disabled = true;
+            
+            // 获取高级选项
+            const topK = parseInt(document.getElementById('topKSelect').value);
+            const scoreThreshold = parseFloat(document.getElementById('scoreThreshold').value);
+            const includeContext = document.getElementById('includeContext').checked;
+            
+            // 发送问题
+            fetch('/ask', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    question: question,
+                    top_k: topK,
+                    score_threshold: scoreThreshold,
+                    include_context: includeContext
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    addMessage('抱歉，处理您的问题时出现了错误：' + data.error, 'bot');
+                } else {
+                    // 添加机器人回答
+                    addMessage(data.answer, 'bot');
+                    
+                    // 如果有来源信息，显示来源
+                    if (data.sources && data.sources.length > 0) {
+                        showSources(data.sources);
+                    }
+                    
+                    // 更新对话统计
+                    updateConversationStats();
+                }
+            })
+            .catch(error => {
+                addMessage('抱歉，系统出现错误，请稍后重试。', 'bot');
+            })
+            .finally(() => {
+                // 恢复按钮状态
+                isProcessing = false;
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            });
+        }
+        
+        function addMessage(content, type) {
+            const chatContainer = document.getElementById('chatContainer');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${type}-message`;
+            
+            if (type === 'user') {
+                messageDiv.innerHTML = `<i class="bi bi-person"></i> ${content}`;
+            } else if (type === 'bot') {
+                messageDiv.innerHTML = `<i class="bi bi-robot"></i> ${content}`;
+            }
+            
+            chatContainer.appendChild(messageDiv);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+        
+        function addSystemMessage(content) {
+            const chatContainer = document.getElementById('chatContainer');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message system-message';
+            messageDiv.innerHTML = content;
+            
+            chatContainer.appendChild(messageDiv);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+        
+        function showSources(sources) {
+            const chatContainer = document.getElementById('chatContainer');
+            const sourcesDiv = document.createElement('div');
+            sourcesDiv.className = 'message bot-message';
+            sourcesDiv.innerHTML = `
+                <strong><i class="bi bi-link-45deg"></i> 信息来源：</strong><br>
+                ${sources.map(source => `
+                    <div class="source-item">
+                        <div class="page-info">第${source.page_num}页</div>
+                        <div class="similarity">相关度: ${(source.similarity * 100).toFixed(1)}%</div>
+                        <div class="content-preview">${source.content_preview}</div>
+                    </div>
+                `).join('')}
+            `;
+            
+            chatContainer.appendChild(sourcesDiv);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+        
+        function showUploadProgress() {
+            document.getElementById('uploadProgress').style.display = 'block';
+            document.getElementById('uploadStatus').innerHTML = '';
+        }
+        
+        function hideUploadProgress() {
+            document.getElementById('uploadProgress').style.display = 'none';
+        }
+        
+        function showAlert(message, type) {
+            const alertDiv = document.createElement('div');
+            alertDiv.className = `alert alert-${type} alert-dismissible fade show`;
+            alertDiv.innerHTML = `
+                ${message}
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            `;
+            
+            document.getElementById('uploadStatus').innerHTML = '';
+            document.getElementById('uploadStatus').appendChild(alertDiv);
+            
+            // 自动消失
+            setTimeout(() => {
+                if (alertDiv.parentNode) {
+                    alertDiv.remove();
+                }
+            }, 5000);
+        }
+        
+        function refreshSystemInfo() {
+            fetch('/system_info')
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    console.error('获取系统信息失败:', data.error);
+                    return;
+                }
+                
+                // 更新系统状态
+                document.getElementById('systemStatus').textContent = data.system_status === 'running' ? '运行中' : '停止';
+                
+                // 更新向量索引状态
+                if (data.vector_index && data.vector_index.status === 'built') {
+                    document.getElementById('indexStatus').textContent = `已构建 (${data.vector_index.total_chunks}个块)`;
+                } else {
+                    document.getElementById('indexStatus').textContent = '未构建';
+                }
+                
+                // 更新RAG系统状态
+                if (data.rag_stats) {
+                    document.getElementById('ragStatus').textContent = `已初始化 (${data.rag_stats.total_conversations}次对话)`;
+                } else {
+                    document.getElementById('ragStatus').textContent = '未初始化';
+                }
+                
+                // 更新统计信息
+                if (data.vector_index && data.vector_index.status === 'built') {
+                    document.getElementById('totalChunks').textContent = data.vector_index.total_chunks;
+                }
+                
+                if (data.rag_stats) {
+                    document.getElementById('totalConversations').textContent = data.rag_stats.total_conversations;
+                }
+            })
+            .catch(error => {
+                console.error('获取系统信息失败:', error);
+            });
+        }
+        
+        function refreshFileList() {
+            fetch('/files')
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    console.error('获取文件列表失败:', data.error);
+                    return;
+                }
+                
+                const fileList = document.getElementById('fileList');
+                
+                if (data.files.length === 0) {
+                    fileList.innerHTML = '<p class="text-center text-muted">暂无文件</p>';
+                    document.getElementById('totalFiles').textContent = '0';
+                    return;
+                }
+                
+                fileList.innerHTML = data.files.map(file => `
+                    <div class="file-item">
+                        <div class="file-info">
+                            <div class="file-name">${file.filename}</div>
+                            <div class="file-meta">
+                                ${formatFileSize(file.size)} | ${formatDate(file.upload_time)} | ${file.type.toUpperCase()}
+                            </div>
+                        </div>
+                        <button class="btn btn-sm btn-outline-primary" onclick="downloadFile('${file.filename}')">
+                            <i class="bi bi-download"></i>
+                        </button>
+                    </div>
+                `).join('');
+                
+                document.getElementById('totalFiles').textContent = data.files.length;
+            })
+            .catch(error => {
+                console.error('获取文件列表失败:', error);
+            });
+        }
+        
+        function downloadFile(filename) {
+            window.open(`/download/${filename}`, '_blank');
+        }
+        
+        function clearHistory() {
+            if (!confirm('确定要清空所有对话历史吗？此操作不可恢复。')) {
+                return;
+            }
+            
+            fetch('/clear_history', {
+                method: 'POST'
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    showAlert(data.error, 'danger');
+                } else {
+                    showAlert('对话历史已清空', 'success');
+                    document.getElementById('chatContainer').innerHTML = `
+                        <div class="message system-message">
+                            <i class="bi bi-lightbulb"></i> 对话历史已清空，可以开始新的对话。
+                        </div>
+                    `;
+                    updateConversationStats();
+                }
+            })
+            .catch(error => {
+                showAlert('清空历史失败：' + error.message, 'danger');
+            });
+        }
+        
+        function exportHistory() {
+            fetch('/export_history', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    format: 'json'
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    showAlert(data.error, 'danger');
+                } else {
+                    showAlert('对话历史导出成功', 'success');
+                    // 下载文件
+                    window.open(`/download/${data.filename}`, '_blank');
+                }
+            })
+            .catch(error => {
+                showAlert('导出历史失败：' + error.message, 'danger');
+            });
+        }
+        
+        function updateStats(data) {
+            if (data.chunks_info) {
+                document.getElementById('totalChunks').textContent = data.chunks_info.total_chunks;
+            }
+            if (data.parse_result) {
+                document.getElementById('totalPages').textContent = data.parse_result.total_pages;
+            }
+        }
+        
+        function updateConversationStats() {
+            // 这里可以添加更新对话统计的逻辑
+            refreshSystemInfo();
+        }
+        
+        function formatFileSize(bytes) {
+            if (bytes === 0) return '0 B';
+            const k = 1024;
+            const sizes = ['B', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+        }
+        
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            return date.toLocaleString('zh-CN');
+        }
+        
+        // 定期刷新系统信息
+        setInterval(refreshSystemInfo, 30000); // 每30秒刷新一次
+    </script>
+</body>
+</html>

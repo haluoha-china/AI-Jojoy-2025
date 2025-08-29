@@ -1,0 +1,362 @@
+(kb_enterprise_py310) root@autodl-container-caf44cbe32-82efbe0a:~/autodl-tmp/enterprise_kb/LLaMA-Factory# python src/train.py \
+  --model_name_or_path /root/autodl-tmp/enterprise_kb/models/transformers/DeepSeek-R1-Distill-Qwen-7B \
+  --dataset combined_training_data \
+  --template qwen \
+  --finetuning_type lora \
+  --output_dir ./lora_ckpt \
+  --per_device_train_batch_size 4 \
+  --gradient_accumulation_steps 4 \
+  --num_train_epochs 3 \
+  --quantization_bit 4 \
+  --learning_rate 3e-4 \
+  --fp16 true \
+  --lora_rank 8 \
+  --lora_alpha 16 \
+  --lora_dropout 0.1 \
+  --do_train \
+  --overwrite_output_dir
+[WARNING|2025-08-23 12:31:16] llamafactory.hparams.parser:148 >> We recommend enable `upcast_layernorm` in quantized training.
+[INFO|2025-08-23 12:31:16] llamafactory.hparams.parser:414 >> Process rank: 0, world size: 1, device: cuda:0, distributed training: False, compute dtype: torch.float16
+[INFO|tokenization_utils_base.py:2065] 2025-08-23 12:31:16,744 >> loading file tokenizer.model
+[INFO|tokenization_utils_base.py:2065] 2025-08-23 12:31:16,744 >> loading file tokenizer.json
+[INFO|tokenization_utils_base.py:2065] 2025-08-23 12:31:16,744 >> loading file added_tokens.json
+[INFO|tokenization_utils_base.py:2065] 2025-08-23 12:31:16,744 >> loading file special_tokens_map.json
+[INFO|tokenization_utils_base.py:2065] 2025-08-23 12:31:16,744 >> loading file tokenizer_config.json
+[INFO|tokenization_utils_base.py:2065] 2025-08-23 12:31:16,744 >> loading file chat_template.jinja
+[INFO|tokenization_utils_base.py:2336] 2025-08-23 12:31:17,120 >> Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[INFO|configuration_utils.py:750] 2025-08-23 12:31:17,128 >> loading configuration file /root/autodl-tmp/enterprise_kb/models/transformers/DeepSeek-R1-Distill-Qwen-7B/config.json
+[INFO|configuration_utils.py:817] 2025-08-23 12:31:17,131 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151643,
+  "hidden_act": "silu",
+  "hidden_size": 3584,
+  "initializer_range": 0.02,
+  "intermediate_size": 18944,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 131072,
+  "max_window_layers": 28,
+  "model_type": "qwen2",
+  "num_attention_heads": 28,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 4,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 10000,
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.55.0",
+  "use_cache": true,
+  "use_mrope": false,
+  "use_sliding_window": false,
+  "vocab_size": 152064
+}
+
+[INFO|tokenization_utils_base.py:2065] 2025-08-23 12:31:17,132 >> loading file tokenizer.model
+[INFO|tokenization_utils_base.py:2065] 2025-08-23 12:31:17,132 >> loading file tokenizer.json
+[INFO|tokenization_utils_base.py:2065] 2025-08-23 12:31:17,132 >> loading file added_tokens.json
+[INFO|tokenization_utils_base.py:2065] 2025-08-23 12:31:17,132 >> loading file special_tokens_map.json
+[INFO|tokenization_utils_base.py:2065] 2025-08-23 12:31:17,132 >> loading file tokenizer_config.json
+[INFO|tokenization_utils_base.py:2065] 2025-08-23 12:31:17,132 >> loading file chat_template.jinja
+[INFO|tokenization_utils_base.py:2336] 2025-08-23 12:31:17,471 >> Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[INFO|2025-08-23 12:31:17] llamafactory.data.template:143 >> Replace eos token: <|im_end|>.
+[WARNING|2025-08-23 12:31:17] llamafactory.data.template:148 >> New tokens have been added, make sure `resize_vocab` is True.
+[INFO|2025-08-23 12:31:17] llamafactory.data.loader:143 >> Loading dataset combined_training_data.jsonl...
+Generating train split: 1373 examples [00:00, 26139.08 examples/s]
+Converting format of dataset: 100%|██████████████████████████████████████████████████████████████| 1373/1373 [00:00<00:00, 17792.46 examples/s]
+Running tokenizer on dataset: 100%|███████████████████████████████████████████████████████████████| 1373/1373 [00:00<00:00, 3664.35 examples/s]
+training example:
+input_ids:
+[27, 91, 318, 4906, 91, 29, 8948, 198, 2610, 525, 1207, 16948, 11, 3465, 553, 54364, 14817, 13, 1446, 525, 264, 10950, 17847, 13, 151665, 198, 27, 91, 318, 4906, 91, 29, 872, 198, 9996, 100368, 105676, 106065, 11319, 151665, 198, 27, 91, 318, 4906, 91, 29, 77091, 198, 100345, 26940, 9996, 100368, 108126, 25067, 99812, 3837, 9996, 100368, 105676, 71817, 18, 32571, 3837, 101127, 18493, 105676, 99363, 40542, 5373, 99749, 40542, 33108, 102320, 40542, 71817, 1773, 100398, 20450, 103956, 14880, 100111, 73218, 31843, 31139, 100368, 8903, 81202, 1773, 151665, 198]
+inputs:
+<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+ESS培训每月几次？<|im_end|>
+<|im_start|>assistant
+根据《ESS培训管理制度》规定，ESS培训每月进行3次，分别在每月第一周、第三周和第五周进行。具体时间安排请查看公司内网培训日历。<|im_end|>
+
+label_ids:
+[-100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, 100345, 26940, 9996, 100368, 108126, 25067, 99812, 3837, 9996, 100368, 105676, 71817, 18, 32571, 3837, 101127, 18493, 105676, 99363, 40542, 5373, 99749, 40542, 33108, 102320, 40542, 71817, 1773, 100398, 20450, 103956, 14880, 100111, 73218, 31843, 31139, 100368, 8903, 81202, 1773, 151665, 198]
+labels:
+根据《ESS培训管理制度》规定，ESS培训每月进行3次，分别在每月第一周、第三周和第五周进行。具体时间安排请查看公司内网培训日历。<|im_end|>
+
+[INFO|configuration_utils.py:750] 2025-08-23 12:31:18,889 >> loading configuration file /root/autodl-tmp/enterprise_kb/models/transformers/DeepSeek-R1-Distill-Qwen-7B/config.json
+[INFO|configuration_utils.py:817] 2025-08-23 12:31:18,891 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151643,
+  "hidden_act": "silu",
+  "hidden_size": 3584,
+  "initializer_range": 0.02,
+  "intermediate_size": 18944,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 131072,
+  "max_window_layers": 28,
+  "model_type": "qwen2",
+  "num_attention_heads": 28,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 4,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 10000,
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.55.0",
+  "use_cache": true,
+  "use_mrope": false,
+  "use_sliding_window": false,
+  "vocab_size": 152064
+}
+
+[INFO|2025-08-23 12:31:18] llamafactory.model.model_utils.quantization:143 >> Quantizing model to 4 bit with bitsandbytes.
+[INFO|2025-08-23 12:31:18] llamafactory.model.model_utils.kv_cache:143 >> KV cache is disabled during training.
+[INFO|modeling_utils.py:1305] 2025-08-23 12:31:19,447 >> loading weights file /root/autodl-tmp/enterprise_kb/models/transformers/DeepSeek-R1-Distill-Qwen-7B/model.safetensors.index.json
+[INFO|modeling_utils.py:2411] 2025-08-23 12:31:19,447 >> Instantiating Qwen2ForCausalLM model under default dtype torch.float16.
+[INFO|configuration_utils.py:1098] 2025-08-23 12:31:19,449 >> Generate config GenerationConfig {
+  "bos_token_id": 151643,
+  "eos_token_id": 151643,
+  "use_cache": false
+}
+
+Loading checkpoint shards: 100%|█████████████████████████████████████████████████████████████████████████████████| 2/2 [00:17<00:00,  8.64s/it]
+[INFO|modeling_utils.py:5606] 2025-08-23 12:31:36,926 >> All model checkpoint weights were used when initializing Qwen2ForCausalLM.
+
+[INFO|modeling_utils.py:5614] 2025-08-23 12:31:36,926 >> All the weights of Qwen2ForCausalLM were initialized from the model checkpoint at /root/autodl-tmp/enterprise_kb/models/transformers/DeepSeek-R1-Distill-Qwen-7B.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use Qwen2ForCausalLM for predictions without further training.
+[INFO|configuration_utils.py:1051] 2025-08-23 12:31:36,929 >> loading configuration file /root/autodl-tmp/enterprise_kb/models/transformers/DeepSeek-R1-Distill-Qwen-7B/generation_config.json
+[INFO|configuration_utils.py:1098] 2025-08-23 12:31:36,929 >> Generate config GenerationConfig {
+  "bos_token_id": 151646,
+  "do_sample": true,
+  "eos_token_id": 151643,
+  "temperature": 0.6,
+  "top_p": 0.95
+}
+
+[INFO|2025-08-23 12:31:36] llamafactory.model.model_utils.checkpointing:143 >> Gradient checkpointing enabled.
+[INFO|2025-08-23 12:31:36] llamafactory.model.model_utils.attention:143 >> Using torch SDPA for faster training and inference.
+[INFO|2025-08-23 12:31:36] llamafactory.model.adapter:143 >> Upcasting trainable params to float32.
+[INFO|2025-08-23 12:31:36] llamafactory.model.adapter:143 >> Fine-tuning method: LoRA
+[INFO|2025-08-23 12:31:36] llamafactory.model.model_utils.misc:143 >> Found linear modules: gate_proj,q_proj,down_proj,v_proj,k_proj,o_proj,up_proj
+[INFO|2025-08-23 12:31:37] llamafactory.model.loader:143 >> trainable params: 20,185,088 || all params: 7,635,801,600 || trainable%: 0.2643
+[INFO|trainer.py:757] 2025-08-23 12:31:37,366 >> Using auto half precision backend
+[INFO|trainer.py:2433] 2025-08-23 12:31:37,607 >> ***** Running training *****
+[INFO|trainer.py:2434] 2025-08-23 12:31:37,607 >>   Num examples = 1,373
+[INFO|trainer.py:2435] 2025-08-23 12:31:37,607 >>   Num Epochs = 3
+[INFO|trainer.py:2436] 2025-08-23 12:31:37,607 >>   Instantaneous batch size per device = 4
+[INFO|trainer.py:2439] 2025-08-23 12:31:37,607 >>   Total train batch size (w. parallel, distributed & accumulation) = 16
+[INFO|trainer.py:2440] 2025-08-23 12:31:37,607 >>   Gradient Accumulation steps = 4
+[INFO|trainer.py:2441] 2025-08-23 12:31:37,607 >>   Total optimization steps = 258
+[INFO|trainer.py:2442] 2025-08-23 12:31:37,613 >>   Number of trainable parameters = 20,185,088
+ 13%|█████████████▍                                                                                           | 33/258 [00:42<04:46,  1.27s/it]100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 258/258 [05:26<00:00,  1.25s/it][INFO|trainer.py:4074] 2025-08-23 12:37:04,183 >> Saving model checkpoint to ./lora_ckpt/checkpoint-258
+[INFO|configuration_utils.py:750] 2025-08-23 12:37:04,229 >> loading configuration file /root/autodl-tmp/enterprise_kb/models/transformers/DeepSeek-R1-Distill-Qwen-7B/config.json
+[INFO|configuration_utils.py:817] 2025-08-23 12:37:04,231 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151643,
+  "hidden_act": "silu",
+  "hidden_size": 3584,
+  "initializer_range": 0.02,
+  "intermediate_size": 18944,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 131072,
+  "max_window_layers": 28,
+  "model_type": "qwen2",
+  "num_attention_heads": 28,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 4,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 10000,
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.55.0",
+  "use_cache": true,
+  "use_mrope": false,
+  "use_sliding_window": false,
+  "vocab_size": 152064
+}
+
+[INFO|tokenization_utils_base.py:2393] 2025-08-23 12:37:04,302 >> chat template saved in ./lora_ckpt/checkpoint-258/chat_template.jinja
+[INFO|tokenization_utils_base.py:2562] 2025-08-23 12:37:04,302 >> tokenizer config file saved in ./lora_ckpt/checkpoint-258/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2571] 2025-08-23 12:37:04,303 >> Special tokens file saved in ./lora_ckpt/checkpoint-258/special_tokens_map.json
+[INFO|trainer.py:2718] 2025-08-23 12:37:04,652 >> 
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+{'train_runtime': 327.0388, 'train_samples_per_second': 12.595, 'train_steps_per_second': 0.789, 'train_loss': 1.265905927318011, 'epoch': 3.0}
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 258/258 [05:27<00:00,  1.27s/it]
+[INFO|trainer.py:4074] 2025-08-23 12:37:04,653 >> Saving model checkpoint to ./lora_ckpt
+[INFO|configuration_utils.py:750] 2025-08-23 12:37:04,698 >> loading configuration file /root/autodl-tmp/enterprise_kb/models/transformers/DeepSeek-R1-Distill-Qwen-7B/config.json
+[INFO|configuration_utils.py:817] 2025-08-23 12:37:04,699 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151643,
+  "hidden_act": "silu",
+  "hidden_size": 3584,
+  "initializer_range": 0.02,
+  "intermediate_size": 18944,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 131072,
+  "max_window_layers": 28,
+  "model_type": "qwen2",
+  "num_attention_heads": 28,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 4,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 10000,
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.55.0",
+  "use_cache": true,
+  "use_mrope": false,
+  "use_sliding_window": false,
+  "vocab_size": 152064
+}
+
+[INFO|tokenization_utils_base.py:2393] 2025-08-23 12:37:04,780 >> chat template saved in ./lora_ckpt/chat_template.jinja
+[INFO|tokenization_utils_base.py:2562] 2025-08-23 12:37:04,780 >> tokenizer config file saved in ./lora_ckpt/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2571] 2025-08-23 12:37:04,780 >> Special tokens file saved in ./lora_ckpt/special_tokens_map.json
+***** train metrics *****
+  epoch                    =        3.0
+  total_flos               = 11497630GF
+  train_loss               =     1.2659
+  train_runtime            = 0:05:27.03
+  train_samples_per_second =     12.595
+  train_steps_per_second   =      0.789
+[INFO|modelcard.py:456] 2025-08-23 12:37:04,879 >> Dropping the following result as it does not have all the necessary fields:
+{'task': {'name': 'Causal Language Modeling', 'type': 'text-generation'}}

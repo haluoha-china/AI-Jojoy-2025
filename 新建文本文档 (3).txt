@@ -1,0 +1,23 @@
+cd /root/autodl-tmp/enterprise_kb/LLaMA-Factory
+
+python src/train.py \
+  --model_name_or_path /root/autodl-tmp/enterprise_kb/models/transformers/DeepSeek-R1-Distill-Qwen-7B \
+  --dataset "company_abbreviations_train,company_abbreviations_eval" \
+  --template qwen \
+  --finetuning_type lora \
+  --lora_rank 8 \
+  --lora_alpha 16 \
+  --lora_dropout 0.1 \
+  --output_dir ./lora_ckpt_full_data \
+  --num_train_epochs 20 \
+  --per_device_train_batch_size 2 \
+  --gradient_accumulation_steps 8 \
+  --learning_rate 5e-5 \
+  --cutoff_len 512 \
+  --save_strategy steps \
+  --save_steps 100 \
+  --logging_steps 10 \
+  --overwrite_output_dir \
+  --bf16 true \
+  --dataloader_pin_memory false \
+  --remove_unused_columns false
